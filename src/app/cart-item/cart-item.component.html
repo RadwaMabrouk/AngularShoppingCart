@@ -1,0 +1,18 @@
+<mat-card class="example-card">
+  <mat-card-header>
+    <mat-card-title>{{productDetails.productName}}</mat-card-title>
+    <mat-card-subtitle>{{productDetails.productCategory}}</mat-card-subtitle>
+  </mat-card-header>
+  <img mat-card-image src="{{productDetails.imageUrl}}" alt="">
+  <mat-card-content>
+    <p>
+      Price : {{productDetails.productPrice}}
+    </p>
+  </mat-card-content>
+  <mat-card-actions>
+      <button mat-mini-fab color="primary" (click)="increment($event)">+</button>
+       <input [(ngModel)]="quantity">
+      <button mat-mini-fab color="primary" (click)="decrement($event)">-</button>
+      <button mat-raised-button (click)="navigationToOrderForm()">order now</button>
+  </mat-card-actions>
+</mat-card>

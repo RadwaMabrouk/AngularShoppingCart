@@ -1,0 +1,16 @@
+<mat-card class="example-card">
+  <mat-card-header>
+    <mat-card-title>{{productDetails.productName}}</mat-card-title>
+    <mat-card-subtitle>{{productDetails.productCategory}}</mat-card-subtitle>
+  </mat-card-header>
+  <img mat-card-image src="{{productDetails.imageUrl}}" alt="">
+  <mat-card-content>
+    <p>
+      Price : {{productDetails.productPrice}}
+    </p>
+  </mat-card-content>
+  <mat-card-actions>
+    <button mat-raised-button color="primary" (click)="addToCart($event)">Add To Cart</button>
+    <a [routerLink]="['/detail', productDetails.id]"><button mat-raised-button color="primary"  (click)="showDetails($event)">Show Details</button></a>
+  </mat-card-actions>
+</mat-card>

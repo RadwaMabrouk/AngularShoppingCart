@@ -1,0 +1,9 @@
+<input placeholder="search" [(ngModel)]="inputValue">
+<div *ngIf ="cardData.length>0">
+    <div *ngFor="let oneCardData of cardData | filter:inputValue">
+        <app-product-card [productDetails]=oneCardData ></app-product-card>
+        <br>
+      </div>
+</div>
+
+

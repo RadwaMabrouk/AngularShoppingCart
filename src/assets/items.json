@@ -1,0 +1,28 @@
+[{
+  "productName":"Product nameOne",
+  "productPrice":"100$",
+  "productImage":"https://picsum.photos/200/300/?random",
+  "productCategory":"Home Appliance",
+  "id":1
+},
+{
+  "productName":"Product nameTwo",
+  "productPrice":"200$",
+  "productImage":"https://picsum.photos/200/300/?random",
+  "productCategory":"Home Appliance",
+  "id":2
+},
+{
+  "productName":"Product nametThree",
+  "productPrice":"300$",
+  "productImage":"https://picsum.photos/200/300/?random",
+  "productCategory":"Home Appliance",
+  "id":3
+},
+{
+  "productName":"Product nametFour",
+  "productPrice": "400$",
+  "productImage": "https://picsum.photos/200/300/?random",
+  "productCategory":"Home Appliance",
+  "id":4
+}]

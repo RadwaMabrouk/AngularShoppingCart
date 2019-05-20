@@ -1,0 +1,27 @@
+<a [routerLink]="['/login']" routerLinkActive="active">Login</a>
+<mat-toolbar color="primary">
+  <a routerLink="/"><span>Home</span></a>
+  <span class="example-spacer"></span>
+
+  <a routerLink="/cart"><i class="material-icons">shopping_cart</i></a>
+  <button mat-button [matMenuTriggerFor]="belowMenu">>></button>
+<mat-menu #belowMenu="matMenu" yPosition="below">
+  <div *ngFor="let productDetails of dropMenuItem" mat-menu-item>
+     <div class="row no-gutters">
+    <div class="col-md-4">
+      <img src="{{productDetails.imageUrl}}" class="card-img" alt="...">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">{{productDetails.productName}}</h5>
+        <p class="card-text">{{productDetails.productCategory}}</p>
+        <p class="card-text"><small class="text-muted">Price : {{productDetails.productPrice}}</small></p>
+      </div>
+    </div>
+  </div>
+  </div>
+  <!-- <app-detail-view *ngFor="let item of dropMenuItime" mat-menu-item></app-detail-view> -->
+
+</mat-menu>
+Cart Count : {{cartCount}}
+</mat-toolbar>

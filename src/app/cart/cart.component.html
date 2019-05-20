@@ -1,0 +1,7 @@
+<h1>*** CART CONTENTS***</h1>
+<div *ngIf="allItems.length > 0">
+  <div  *ngFor="let productId of uniqueIdArray">
+    <app-cart-item [quantity]="uniqueItemsInCart[productId]" [productDetails]="allItems[productId-1]" (itemShouldBeDeleted)="itemShouldBeDeleted($event)" ></app-cart-item>
+  </div>
+</div>
+
